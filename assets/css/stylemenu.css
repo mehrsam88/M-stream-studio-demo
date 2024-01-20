@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url("Ubuntu-Regular.woff2") format("woff2"),
+    url("Ubuntu-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: optional;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+.menu {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.menu-item {
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+ 
+}
+.slide { 
+  overflow: hidden;
+  width: 80px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 10px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0px 10px 30px 0px;
+  /* transition: .6s cubic-bezier(.25,-0.03,0,.99); */
+}
+
+.slide > .row {
+  background-color: rgba(255, 255, 255, 0.719);
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.slide > .row > .icon {
+  background-color: #38ada9;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.slide > .row > .description {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+  height: 80px;
+  width: 520px; 
+}
+.description p a {
+  padding-top: 5px;
+  color: #535c68;
+}
+.description h4 {
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: black;
+  font-weight: 1000;
+}
+.menu-item input {
+  display: none;
+}
+.menu-item input:checked +  label {
+  .row {
+    background-color: rgba(255, 255, 255, 0.719);
+    width: 100%;
+  }
+  width: 68%;
+}
+.slide[for="item-1"] {
+  background-image: url("../img/9579704-fotor-bg-remover-2024010311407.png");
+}
+
+.slide[for="item-2"] {
+  background-image: url("../img/still-life-rendering-jackets-display.jpg");
+  background-size: 610px 410px;
+  background-repeat: no-repeat;
+}
+
+.slide[for="item-3"] {
+  background-image: url("../img/yellow-sports-shoe-with-elegant-design-generated-by-ai.jpg");
+  background-size: 610px 420px;
+  background-repeat: no-repeat;
+}
+.slide[for="item-4"] {
+  background-image: url("../img/flat-lay-composition-different-traveling-elements.jpg");
+  background-size: 610px 420px;
+}
+.menu {
+ background-image:url('../img/blob-scene-haikei.svg');
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  --mask: radial-gradient(34.99px at 50% 48px, #000 99%, #0000 101%)
+      calc(50% - 60px) 0/120px 51% repeat-x,
+    radial-gradient(34.99px at 50% -18px, #0000 99%, #000 101%) 50% 30px/120px
+      calc(51% - 30px) repeat-x,
+    radial-gradient(34.99px at 50% calc(100% - 48px), #000 99%, #0000 101%)
+      calc(50% - 60px) 100%/120px 51% repeat-x,
+    radial-gradient(34.99px at 50% calc(100% + 18px), #0000 99%, #000 101%) 50%
+      calc(100% - 30px) / 120px calc(51% - 30px) repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+@media screen and (max-width: 936px) {
+  .menu {
+    margin-top: 2%;
+    align-items: center;
+    height: 750px;
+  }
+  .menu-item {
+    display: block;
+    margin-bottom: 230px;
+  }
+  .slide > .row > .description {
+    height: 80px;
+    width: 500px;
+  }
+  .menu-item input:checked + label {
+    .row {
+      background-color: rgba(255, 255, 255, 0.719);
+      width: 100%;
+    }
+    width: 61vw;
+    height: 50vh;
+  }
+  .slide[for="item-3"] {
+  background-size: 61vw 42vw;
+  background-repeat: no-repeat;
+}
+.slide{
+  width: 61vw;
+}
+}

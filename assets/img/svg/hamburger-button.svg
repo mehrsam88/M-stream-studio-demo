@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="50" height="50">
+	<title>icons8-hamburger-button-30</title>
+	<defs>
+		<image  width="24" height="24" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAAXNSR0IB2cksfwAAAFdQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////jkYO6AAAAB10Uk5TAB1CRBm9/7wY05uZuwQcP6BAn1rLyhSd7pwVWbqQTK22AAAAi0lEQVR4nKWSyRKCMBBEG5QmQXYQZPn/7zTqpUlMaRV9nFczPRsAJOnloDTBS9eMgXLjQEZb3A4qLEtXh7aCp8qyRsPWjwMtG3TsQ9Cz+4BBLQYBo7Z0FzDpGJOAqEcUzA/RLGBRsJzyWLXd9Z8BN13J9sMjuvbooZB/O+3usCnDZ9jNO7P238fVwRPCUQ6bdh/ZegAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="3" y="3"/>
+</svg>

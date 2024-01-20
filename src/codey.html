@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: #000;
+      }
+      .main {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 10%;
+        background-color: aqua;
+        border-radius: 50px;
+        width: 20%;
+        height: 100vh;
+      }
+      .login {
+        width: 50%;
+        background-color: rgb(39, 15, 15);
+        border-radius: 50px;
+      }
+      .vertical-text {
+        
+        margin: 0; background-color: #374bff;
+        padding: 0;
+      }
+      .vertical-text a {position: fixed;
+       text-orientation: mixed;
+        writing-mode: vertical-rl;
+      }
+      /* ************************************************************** */
+      #container-buttons {
+        margin: 20px 0 0 0;
+        display: flex;
+        align-items: center;
+      }
+      #container-buttons .container-buttons-contact img {
+        width: 13px;
+      }
+      #container-buttons .container-buttons-cart img {
+        width: 18px;
+      }
+      #container-buttons .container-buttons-contact a img {
+        flex-wrap: nowrap;
+        border: none;
+        background-color: #374bff;
+        padding: 15px 20px;
+        border-radius: 15px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      #container-buttons .container-buttons-cart button {
+        flex-wrap: nowrap;
+        border: none;
+        background-color: #f6b93b;
+        padding: 15px 20px;
+        border-radius: 15px;
+        font-size: 20px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      #container-buttons .container-buttons-contact a {
+        margin-right: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="login">
+        <a href="#">login</a>
+      </div>
+      <div class="signup">
+        <a href="#">signup</a>
+      </div>
+    </div>
+    <div class="vertical-text">This text will appear vertically.</div>
+    
+  </body>
+</html>

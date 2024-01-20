@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Menu Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #menuButton {
+            font-size: 30px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+             z-index: 2;
+        }
+
+        #menuCheckbox {
+            display: none;
+        }
+
+        #sideMenu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        #sideMenu a {
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        #sideMenu a:hover {
+            color: #f1f1f1;
+        }
+
+        #menuCheckbox:checked + #sideMenu {
+            width: 250px;
+        }
+
+        #menuCheckbox:checked + #sideMenu + #menuButton::before {
+            content: '\00D7'; /* Display '×' (close symbol) */
+        }
+
+        #menuButton::before {
+            content: '\2630'; /* Display '☰' (hamburger symbol) */
+        }
+    </style>
+</head>
+<body>
+
+<input type="checkbox" id="menuCheckbox">
+
+<div id="sideMenu">
+    <a href="#">Menu Item 1</a>
+    <a href="#">Menu Item 2</a>
+    <a href="#">Menu Item 3</a>
+    <!-- Add more menu items as needed -->
+</div>
+
+<label for="menuCheckbox" id="menuButton"></label>
+
+</body>
+</html>
